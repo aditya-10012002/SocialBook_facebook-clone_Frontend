@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SocialBook_facebook-clone_Frontend/static/css/main.7166f59c.css",
+    "main.js": "/SocialBook_facebook-clone_Frontend/static/js/main.967d7799.js",
+    "index.html": "/SocialBook_facebook-clone_Frontend/index.html",
+    "main.7166f59c.css.map": "/SocialBook_facebook-clone_Frontend/static/css/main.7166f59c.css.map",
+    "main.967d7799.js.map": "/SocialBook_facebook-clone_Frontend/static/js/main.967d7799.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7166f59c.css",
+    "static/js/main.967d7799.js"
+  ]
+}
