@@ -1,6 +1,7 @@
 {
   "name": "react-social",
   "version": "0.1.0",
+  "homepage": "http://aditya-10012002.github.io/SocialBook_facebook-clone_Frontend",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -12,6 +13,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.3.4",
     "dayjs": "^1.11.7",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.2",
@@ -20,6 +22,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
