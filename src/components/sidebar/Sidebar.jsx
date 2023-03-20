@@ -34,6 +34,7 @@ export default function Sidebar() {
 
   const signoutHandler = () => {
     localStorage.removeItem("user");
+    window.location.reload();
     navigate('/login');
   }
 
