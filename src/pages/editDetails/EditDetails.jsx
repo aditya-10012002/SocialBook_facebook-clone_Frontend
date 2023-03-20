@@ -47,7 +47,7 @@ export default function EditDetails() {
     console.log(payloadUserUpdate);
 
     try {
-      await axios.put("/api/users/" + user._id, userUpdate);
+      await axios.put("https://socialbook-api.cyclic.app/api/users/" + user._id, userUpdate);
       dispatch({
         type: "UPDATE_USER_DETAILS",
         payload: payloadUserUpdate,

@@ -30,7 +30,7 @@ export default function Profile() {
       data.append("file", f);
 
       try {
-        const imgPath = await axios.post("/api/upload", data);
+        const imgPath = await axios.post("https://socialbook-api.cyclic.app/api/upload", data);
         userUpdate.profilePicture = imgPath.data;
         console.log("Profile picture uploaded");
       } catch (err) {
@@ -44,7 +44,7 @@ export default function Profile() {
     }
 
     try {
-      await axios.put("/api/users/" + currentUser._id, userUpdate);
+      await axios.put("https://socialbook-api.cyclic.app/api/users/" + currentUser._id, userUpdate);
       // window.location.reload();
     } catch (err) {
       console.log(err);
@@ -63,7 +63,7 @@ export default function Profile() {
       data.append("file", f);
 
       try {
-        const imgPath = await axios.post("/api/upload", data);
+        const imgPath = await axios.post("https://socialbook-api.cyclic.app/api/upload", data);
         userUpdate.coverPicture = imgPath.data;
         console.log("Cover picture uploaded");
       } catch (err) {
@@ -77,7 +77,7 @@ export default function Profile() {
     }
 
     try {
-      await axios.put("/api/users/" + currentUser._id, userUpdate);
+      await axios.put("https://socialbook-api.cyclic.app/api/users/" + currentUser._id, userUpdate);
       // window.location.reload();
     } catch (err) {
       console.log(err);
@@ -87,7 +87,7 @@ export default function Profile() {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get(`/api/users?username=${username}`);
+      const res = await axios.get(`https://socialbook-api.cyclic.app/api/users?username=${username}`);
       setUser(res.data);
     };
     fetchUser();

@@ -31,7 +31,7 @@ export default function Share() {
       const data = new FormData();
       data.append("file", file);
       try {
-        const imgPath = await axios.post("/api/upload", data);
+        const imgPath = await axios.post("https://socialbook-api.cyclic.app/api/upload", data);
         newPost.img = imgPath.data;
       } catch (err) {
         console.log(err);
@@ -39,7 +39,7 @@ export default function Share() {
     }
 
     try {
-      await axios.post("/api/posts", newPost);
+      await axios.post("https://socialbook-api.cyclic.app/api/posts", newPost);
       window.location.reload();
     } catch (err) {
       console.log(err);

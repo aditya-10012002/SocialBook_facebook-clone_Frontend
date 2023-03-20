@@ -21,7 +21,7 @@ export default function Sidebar() {
   useEffect(() => {
     const getAllUsers = async () => {
       try {
-        const allUsers = await axios.get("/api/users/all");
+        const allUsers = await axios.get("https://socialbook-api.cyclic.app/api/users/all");
         setAllUsers(allUsers.data);
       } catch (err) {
         console.log("Sidebar error");

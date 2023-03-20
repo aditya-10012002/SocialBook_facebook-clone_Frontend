@@ -24,7 +24,7 @@ export default function Rightbar({ user }) {
   useEffect(() => {
     const getFriends = async () => {
       try {
-        const friendList = await axios.get("/api/users/friends/" + user._id);
+        const friendList = await axios.get("https://socialbook-api.cyclic.app/api/users/friends/" + user._id);
         setFriends(friendList.data);
       } catch (err) {
         console.log("Rightbar error");
@@ -39,7 +39,7 @@ export default function Rightbar({ user }) {
     const getFriends = async () => {
       try {
         const friendList = await axios.get(
-          "/api/users/friends/" + currentUser._id
+          "https://socialbook-api.cyclic.app/api/users/friends/" + currentUser._id
         );
         setOnlineFriends(friendList.data);
       } catch (err) {
@@ -52,12 +52,12 @@ export default function Rightbar({ user }) {
   const handleClick = async () => {
     try {
       if (followed) {
-        await axios.put("/api/users/" + user._id + "/unfollow", {
+        await axios.put("https://socialbook-api.cyclic.app/api/users/" + user._id + "/unfollow", {
           userId: currentUser._id,
         });
         dispatch({ type: "UNFOLLOW", payload: user._id });
       } else {
-        await axios.put("/api/users/" + user._id + "/follow", {
+        await axios.put("https://socialbook-api.cyclic.app/api/users/" + user._id + "/follow", {
           userId: currentUser._id,
         });
         dispatch({ type: "FOLLOW", payload: user._id });

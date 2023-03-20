@@ -23,7 +23,7 @@ export default function Register() {
       passwordAgain: passwordAgain.current.value.trim(),
     };
     try {
-      await axios.post("/api/auth/register", user);
+      await axios.post("https://socialbook-api.cyclic.app/api/auth/register", user);
       navigate("/login");
     } catch (err) {
       setError(err);

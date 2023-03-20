@@ -1,5 +1,4 @@
 {
-  "proxy": "https://socialbook-api.cyclic.app/",
   "name": "react-social",
   "version": "0.1.0",
   "private": true,

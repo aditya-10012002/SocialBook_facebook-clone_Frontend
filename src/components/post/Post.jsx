@@ -26,7 +26,7 @@ export default function Post({ post }) {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await axios.get(`/api/users?userId=${post.userId}`);
+      const res = await axios.get(`https://socialbook-api.cyclic.app/api/users?userId=${post.userId}`);
       setUser(res.data);
     };
     fetchUser();
@@ -34,7 +34,7 @@ export default function Post({ post }) {
 
   const likeHandler = () => {
     try {
-      axios.put("/api/posts/" + post._id + "/like", {
+      axios.put("https://socialbook-api.cyclic.app/api/posts/" + post._id + "/like", {
         userId: currentUser._id,
       });
     } catch (err) {}
