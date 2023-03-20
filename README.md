@@ -1,6 +1,7 @@
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+View this using tablets or laptops as currently it's not responsive to mobile screen sizes.
 
 
 ### Components
