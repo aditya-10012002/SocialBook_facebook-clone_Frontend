@@ -13,12 +13,10 @@ import {
 import CloseFriend from "../closeFriend/CloseFriend";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
 
 export default function Sidebar() {
 
   const [allUsers, setAllUsers] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     const getAllUsers = async () => {
@@ -35,7 +33,6 @@ export default function Sidebar() {
   const signoutHandler = () => {
     localStorage.removeItem("user");
     window.location.reload();
-    navigate('/login');
   }
 
   return (
