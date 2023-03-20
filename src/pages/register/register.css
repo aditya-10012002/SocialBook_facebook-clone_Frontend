@@ -1,0 +1,130 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginWrapper {
+  width: 70%;
+  height: 70%;
+  display: flex;
+}
+
+.loginLeft,
+.loginRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.loginLogo {
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: 800;
+  color: #1775ee;
+  margin-bottom: 10px;
+}
+
+.loginDesc {
+  font-size: 24px;
+  margin-right: 50px;
+}
+
+.registerError {
+  background-color: #9e2525;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.registerBox {
+  /* margin-left: 20px; */
+  height: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: -1px 3px 12px 1px rgba(0, 0, 0, 0.21);
+  -webkit-box-shadow: -1px 3px 12px 1px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: -1px 3px 12px 1px rgba(0, 0, 0, 0.21);
+}
+
+@media (min-width: 1400px) {
+  .registerBox {
+    width: 60%;
+  }
+  .registerError {
+    width: calc(60% + 40px);
+  }
+}
+
+.loginInput {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid gray;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.loginButton {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1775ee;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.loginForgot {
+  text-align: center;
+  color: #1775ee;
+  font-size: 15px;
+}
+
+.loginForgotHr {
+    border: 0.5px solid rgb(214, 214, 214);
+}
+
+.loginRegisterButton {
+  /* width: 60%; */
+  width: 100%;
+  align-self: center;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #42b72a;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.loginRegisterLink {
+  text-decoration: none;
+  width: 60%;
+  align-self: center;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #42b72a;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
